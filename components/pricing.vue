@@ -11,13 +11,13 @@
             style="width: 310px; height: 790px"
           >
             <div class="mt-2 mb-2 mr-6 ml-6">
-              <div class="header">
+              <div class="header pt-6">
                 <h2>Connect</h2>
                 <h4>Cloud server 50 Mb</h4>
               </div>
               <div class="body">
                 <hr width="100%" class="black mt-4 mb-4" />
-                <div class="mb-16">
+                <div class="pb-11">
                   <li>เพิ่ม ลบ แก้ไข เนื้อหาเว็บไซต์ได้ด้วยตัวเอง</li>
                   <li>เปลี่ยนภาพ Slide กิจกรรมของหน่วยงาน</li>
                   <li>แสดงหน้าวันสำคัญอัตโนมัติ ตั้งเวลาแสดงผลเนื้อหาได้</li>
@@ -30,7 +30,6 @@
                   <li>แสดง โฆษณา</li>
                   <li>Theme เว็บไซต์มาตราฐาน</li>
                 </div>
-                <v-spacer></v-spacer>
                 <hr width="100%" class="black mt-16 mb-4" />
               </div>
               <h1 class="price">1,800 บาท</h1>
@@ -45,13 +44,13 @@
             style="width: 310px; height: 790px"
           >
             <div class="mt-2 mb-2 mr-6 ml-6">
-              <div class="header">
+              <div class="header pt-6">
                 <h2>Standard</h2>
                 <h4>Cloud server 4GB</h4>
               </div>
               <div class="body">
                 <hr width="100%" class="black mt-4 mb-4" />
-                <div class="mb-16">
+                <div class="pb-11">
                   <li>เพิ่ม ลบ แก้ไข เนื้อหาเว็บไซต์ได้ด้วยตัวเอง</li>
                   <li>เปลี่ยนภาพ Slide กิจกรรมของหน่วยงาน</li>
                   <li>แสดงหน้าวันสำคัญอัตโนมัติ ตั้งเวลาแสดงผลเนื้อหาได้</li>
@@ -78,7 +77,7 @@
             style="width: 310px; height: 790px"
           >
             <div class="mt-2 mb-2 mr-6 ml-6">
-              <div class="header">
+              <div class="header pt-6">
                 <h2 class="title white--text">Premium</h2>
                 <h4>Cloud server ไม่จำกัด</h4>
               </div>
@@ -121,6 +120,3 @@ export default {
   name: "pricing",
 };
 </script>
-
-<style>
-</style>

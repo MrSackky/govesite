@@ -12,6 +12,7 @@
         <contact />
       </v-container>
     </v-main>
+    <footmain/>
     <foot/>
   </v-app>
 </template>
@@ -19,6 +20,7 @@
 <script>
 import slide from "@/components/slide.vue";
 // import navbars from '~/components/navbars.vue';
+import footmain from '~/components/footmain.vue';
 import foot from '~/components/foot.vue';
 import contact from '~/components/contact.vue';
 import spot from '~/components/spot.vue';
@@ -31,6 +33,7 @@ export default {
     slide,
     // navbars,
     foot,
+    footmain,
     contact,
     spot,
     feaure,

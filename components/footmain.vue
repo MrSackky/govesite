@@ -33,6 +33,33 @@
             >&ensp; LineID : @icti
           </p>
         </v-col>
+        <v-col md="auto" class="text-right">
+        <div class="mt-8">
+          <v-btn class="mb-2" color="#4CAF50" width="120"
+            ><a href="/register"
+              class="
+                btn btn-success-outline
+                mx-2
+                text-decoration-none
+                white--text
+              "
+              >สมัครใช้งาน</a
+            ></v-btn
+          ><br />
+          <v-btn color="#FFFFFF" width="120"
+            ><a href="/login"
+              class="
+                btn btn-success-outline
+                mx-2
+                text-decoration-none
+                black--text
+              "
+            >
+              เข้าสู่ระบบ
+            </a></v-btn
+          >
+        </div>
+        </v-col>
       </v-row>
 
       <hr width="185%" class="mt-3 mb-6" />
