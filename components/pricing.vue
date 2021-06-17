@@ -30,6 +30,7 @@
                   <li>แสดง โฆษณา</li>
                   <li>Theme เว็บไซต์มาตราฐาน</li>
                 </div>
+                <v-spacer></v-spacer>
                 <hr width="100%" class="black mt-16 mb-4" />
               </div>
               <h1 class="price">1,800 บาท</h1>

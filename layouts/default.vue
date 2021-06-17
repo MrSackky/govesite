@@ -8,6 +8,7 @@
         <feaure />
         <pricing/>
         <login/>
+        <register/>
         <contact />
       </v-container>
     </v-main>
@@ -24,6 +25,7 @@ import spot from '~/components/spot.vue';
 import feaure from '~/components/feaure.vue';
 import pricing from '~/components/pricing.vue';
 import login from '~/components/login.vue';
+import register from '~/components/register.vue';
 export default {
   components: {
     slide,
@@ -33,7 +35,8 @@ export default {
     spot,
     feaure,
     pricing,
-    login
+    login,
+    register
   }
 }
 </script>

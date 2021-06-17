@@ -1,248 +1,143 @@
 <template>
   <!--- register --->
-  <div class="card5 mt-5">
-  <div class="card text-center mt-5">
-    <div class="menu">
-      <div class="list">
-        <router-link to="/" class="link1"
-          ><span class="bi-arrow-left mx-1"> กลับหน้าหลัก </span>
-        </router-link>
-        <router-link to="/login" class="link2">
-          มีบัญชีผู้ใช้แล้ว ? <b>เข้าสู่ระบบ</b>
-        </router-link>
+  <v-card class="mx-auto mt-4 mb-16" style="width: 500px; height: 1150px">
+    <div class="content mt-4 mr-4 ml-4 mb-4">
+      <div class="menu-list">
+        <v-row
+          ><v-col class="text-left mt-6 mb-16">
+            <a
+              href="/"
+              class="text-decoration-none black--text mr-2 ml-2 grey--text"
+              ><span class="bi-arrow-left mx-1"> กลับหน้าหลัก </span>
+            </a></v-col
+          ><v-col class="text-right mt-6 mb-16">
+            <p class="grey--text">
+              ยังไม่บัญชีผู้ใช้ ?
+              <a
+                href="/register"
+                class="text-decoration-none black--text mr-2 ml-2"
+              >
+                <b>เข้าสู่ระบบ</b>
+              </a>
+            </p>
+          </v-col></v-row
+        >
       </div>
-    </div>
-    <div class="card-body login-card-body">
-      <h1 class="login-box-msg">สมัครสมาชิก</h1>
-      <p class="login-box-msg">
-        สมัครสมาชิกเพื่อใช้งานระบบเว็บไซต์หน่วยงานสำเร็จรูป
-      </p>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div>
-              <form @submit.prevent="handleSubmit">
-                <div class="form-group">
-                  <label for="govename">ชื่อหน่วยงาน</label>
-                  <input
-                    type="text"
-                    v-model="member.govename"
-                    id="govename"
-                    name="govename"
-                    placeholder="ชื่อหน่วยงาน"
-                    class="form-control"
-                    :class="{
-                      'is-invalid': submitted && $v.member.govename.$error,
-                    }"
-                  />
-                  <div
-                    v-if="submitted && !$v.member.govename.required"
-                    class="invalid-feedback"
-                  >
-                    กรุณากรอกชื่อหน่วยงาน
+      <div class="ml-3 mr-3">
+        <div class="card-body login-card-body">
+          <h1 class="login-box-msg mb-3">สมัครสมาชิก</h1>
+          <p class="login-box-msg grey--text">
+            สมัครสมาชิกเพื่อใช้งานระบบเว็บไซต์หน่วยงานสำเร็จรูป
+          </p>
+        </div>
+        <div class="container">
+          <v-row>
+            <v-col>
+              <div class="content">
+                  <div class="form-group">
+                    <label for="govename" class="grey--text">ชื่อหน่วยงาน</label>
+                    <v-text-field
+                      outlined
+                      type="text"
+                      v-model="unknown"
+                      id="govename"
+                      name="govename"
+                      placeholder="ชื่อหน่วยงาน"
+                      class="form-control"
+                    />
                   </div>
-                </div>
-                <div class="form-group">
-                  <label for="usernames">ชื่อผู้ติดต่อ</label>
-                  <input
-                    type="text"
-                    v-model="member.usernames"
-                    id="usernames"
-                    name="usernames"
-                    placeholder="ชื่อผู้ติดต่อ"
-                    class="form-control"
-                    :class="{
-                      'is-invalid': submitted && $v.member.usernames.$error,
-                    }"
-                  />
-                  <div
-                    v-if="submitted && !$v.member.usernames.required"
-                    class="invalid-feedback"
-                  >
-                    กรุณากรอกชื่อผู้ติดต่อ
+                  <div class="form-group">
+                    <label for="usernames" class="grey--text">ชื่อผู้ติดต่อ</label>
+                    <v-text-field
+                      outlined
+                      type="text"
+                      v-model="unknown"
+                      id="usernames"
+                      name="usernames"
+                      placeholder="ชื่อผู้ติดต่อ"
+                      class="form-control"/>
                   </div>
-                </div>
-                <div class="form-group">
-                  <label for="phone">เบอร์โทร</label>
-                  <input
-                    type="text"
-                    v-model="member.phone"
-                    id="phone"
-                    name="phone"
-                    placeholder="เบอร์โทร"
-                    class="form-control"
-                    :class="{
-                      'is-invalid': submitted && $v.member.phone.$error,
-                    }"
-                  />
-                  <div
-                    v-if="submitted && !$v.member.phone.required"
-                    class="invalid-feedback"
-                  >
-                    กรุณากรอกเบอร์โทร
+                  <div class="form-group">
+                    <label for="phone" class="grey--text">เบอร์โทร</label>
+                    <v-text-field
+                      outlined
+                      type="text"
+                      v-model="unknown"
+                      id="phone"
+                      name="phone"
+                      placeholder="เบอร์โทร"
+                      class="form-control"
+                    />
                   </div>
-                </div>
-                <label for="">URL ใช้งาน</label>
-                <div class="input-group mb-3 m">
-                  government.com/
-                  <input
-                    type="goveurl"
-                    v-model="member.goveurl"
-                    id="goveurl"
-                    name="goveurl"
-                    placeholder="ชื่อ url"
-                    class="form-control"
-                    :class="{
-                      'is-invalid': submitted && $v.member.email.$error,
-                    }"
-                  />
-                  <div
-                    v-if="submitted && $v.member.email.$error"
-                    class="invalid-feedback"
-                  >
-                    <span v-if="!$v.user.member.required"
-                      >กรุณากรอก URL Government</span
-                    >
-                    <span v-if="!$v.member.email.email"
-                      >กรุณากรอก URL Government</span
-                    >
+                  <label for="" class="grey--text">URL ใช้งาน</label>
+                  <div class="form-group">
+                    <v-row class="text-left"><v-col class="mt-4 mr-4">
+                    government.com/</v-col>
+                    <v-text-field
+                      outlined
+                      type="text"
+                      v-model="unknown"
+                      id="goveurl"
+                      name="goveurl"
+                      placeholder="ชื่อ url"
+                      class="form-control text-left mt-3 mr-3"
+                      style="width: 50%"
+                    /></v-row>
                   </div>
-                </div>
-                <div class="form-group">
-                  <label for="email">อีเมลล์</label>
-                  <input
-                    type="email"
-                    v-model="member.email"
-                    id="email"
-                    name="email"
-                    placeholder="อีเมล"
-                    class="form-control"
-                    :class="{
-                      'is-invalid': submitted && $v.member.email.$error,
-                    }"
-                  />
-                  <div
-                    v-if="submitted && $v.member.email.$error"
-                    class="invalid-feedback"
-                  >
-                    <span v-if="!$v.user.member.required"np
-                      >กรุณากรอกอีเมลล์</span
-                    >
-                    <span v-if="!$v.member.email.email">กรุณากรอกอีเมลล์</span>
+                  <div class="form-group">
+                    <label for="email" class="grey--text">อีเมลล์</label>
+                    <v-text-field
+                      outlined
+                      type="text"
+                      v-model="unknown"
+                      id="email"
+                      name="email"
+                      placeholder="อีเมล"
+                      class="form-control"
+                    />
                   </div>
-                </div>
-                <div class="form-group">
-                  <label for="password">Password</label>
-                  <input
-                    type="password"
-                    v-model="member.passwords"
-                    id="password"
-                    name="password"
-                    placeholder="รหัสผ่าน"
-                    class="form-control"
-                    :class="{
-                      'is-invalid': submitted && $v.member.passwords.$error,
-                    }"
-                  />
-                  <div
-                    v-if="submitted && $v.member.passwords.$error"
-                    class="invalid-feedback"
-                  >
-                    <span v-if="!$v.member.passwords.required"
-                      >กรุณากรอกรหัสผ่าน</span
-                    >
-                    <span v-if="!$v.member.passwords.minLength"
-                      >รหัสผ่านต้องมีอย่างน้อย 6 ตัวอักษร</span
-                    >
+                  <div class="form-group">
+                    <label for="password" class="grey--text">Password</label>
+                    <v-text-field
+                      outlined
+                      type="password"
+                      v-model="unknown"
+                      id="password"
+                      name="password"
+                      placeholder="รหัสผ่าน"
+                      class="form-control"
+                    />
                   </div>
-                </div>
-                <div class="form-group">
-                  <label for="confirmPassword">ยืนยันรหัสผ่าน</label>
-                  <input
-                    type="password"
-                    v-model="member.confirmPassword"
-                    id="confirmPassword"
-                    name="confirmPassword"
-                    placeholder="ยืนยันรหัสผ่าน"
-                    class="form-control"
-                    :class="{
-                      'is-invalid':
-                        submitted && $v.member.confirmPassword.$error,
-                    }"
-                  />
-                  <div
-                    v-if="submitted && $v.member.confirmPassword.$error"
-                    class="invalid-feedback"
-                  >
-                    <span v-if="!$v.member.confirmPassword.required"
-                      >กรุณายืนยันรหัสผ่าน</span
-                    >
-                    <span v-else-if="!$v.member.confirmPassword.sameAsPassword"
-                      >รหัสผ่านไม่ตรงกัน</span
-                    >
+                  <div class="form-group">
+                    <label for="confirmPassword" class="grey--text">ยืนยันรหัสผ่าน</label>
+                    <v-text-field
+                      outlined
+                      type="password"
+                      v-model="unknown"
+                      id="confirmPassword"
+                      name="confirmPassword"
+                      placeholder="ยืนยันรหัสผ่าน"
+                      class="form-control"
+                    />
                   </div>
-                </div>
-              </form>
-            </div>
-          </div>
+              </div>
+            </v-col>
+          </v-row>
+        <v-btn
+          to="#"
+          color="green darken-4"
+          class="white--text mb-4 mt-4 mr-2"
+          style="width: 100%"
+        >
+          สมัครสมาชิก
+        </v-btn>
         </div>
       </div>
     </div>
-  </div>
-    <router-link
-      to="/success"
-      type="submit"
-      class="btn btn-success mx-2 mb-2"
-      @click="sendData"
-    >
-      สมัครสมาชิก
-    </router-link>
-  </div>
+  </v-card>
 </template>
 <script>
-import axios from "axios";
 export default {
   name: "register",
-  data() {
-    return {
-      member: {
-        govename: "",
-        usernames: "",
-        phone: "",
-        goveurl: "",
-        email: "",
-        passwords: "",
-        confirmPassword: "",
-      },
-      submitted: false,
-    };
-  },
-  methods: {
-    sendData(e) {
-      e.preventDefault();
-      console.log("send data active!!");
-      this.submitted = true;
-      this.$v.$touch();
-      if (this.$v.$invalid) {
-        return;
-      }
-      axios
-        .post("http://localhost/register.php", {
-          govename: this.member.govename,
-          usernames: this.member.usernames,
-          phone: this.member.phone,
-          goveurl: this.member.goveurl,
-          email: this.member.email,
-          passwords: this.member.passwords,
-        })
-        .then(function (response) {
-          console.log(response);
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
-      this.$router.push({ path: "/confirmregister" });
-    },
-  },
 };
-</script> 
+</script>

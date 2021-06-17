@@ -13,7 +13,7 @@
           /></a>
         </div>
       </v-col>
-      <v-col></v-col>
+      <v-spacer></v-spacer>
       <v-col class="mt-8">
         <div class="btn">
           <a class="text-decoration-none black--text mr-2 ml-2" href="#spot"
@@ -27,7 +27,7 @@
           >
         </div>
       </v-col>
-      <v-col></v-col>
+      <v-spacer></v-spacer>
       <v-col class="mt-6">
         <div class="text-right">
           <a href="/login" class="text-decoration-none black--text mr-1">
