@@ -3,7 +3,7 @@
     <navbars />
     <v-row class="col-right grey lighten-4 text-no-wrap">
       <v-col class="grey lighten-2 text-no-wrap rounded-r-xl">
-        <div class="text-right mt-16 mb-16">
+        <div class="text-right mt-16 mb-16 mr-8">
           <h1 class="head mb-4">ระบบเว็บไซต์หน่วยงานสำเร็จรูป</h1>
           <p>
             สร้างไซต์หน่วยงานท่านได้ตัวเอง ง่าย เร็ว สวยงาม<br />MANAGE YOUR
