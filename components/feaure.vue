@@ -1,0 +1,44 @@
+<template>
+  <v-row class="green darken-4">
+    <v-row class="text-center mt-16 mb-16">
+      <v-col>
+        <div class="img">
+          <img
+            width="550px"
+            height="490px"
+            src="https://s3-alpha-sig.figma.com/img/86e4/588f/ae126c3afbe5daf00b7ce4995493fb1c?Expires=1623628800&Signature=OiwYr~mDXxYiUFnBqEQmDCWIhIo2pd3FIDp9jSSeh60lvVGMOnLGdw8XlrifFL2DWhgdb1y2wtFy~tCTlktE671W773YHXViDYGY8e73fNrV4mHa3iThR296Umt0nzuimbXAOcxZROJuA1~2uMTyd4QV-KocV0TibEeHjKYLROOAp3XQOVyEOKA8b3g4m0g1XeIjYiC8Kjq4K2mpdG2HwVLuKGQ-eyQORU6tEiQmVr8ITcVskRDbB7p-GXGaUbDAaDq-mYusOZzsf48tzIXcnNz51VGXyHJitQ3JIHEHtEKVaWLoyOCf7UvvzjypeKK6ZcxS8-LGYZiDiQ59AzsYDA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+          />
+        </div>
+      </v-col>
+      <v-col>
+        <div class="head white--text text-left mt-6">
+          <h2>กระดานข่าว คลังเอกสารราชการ</h2>
+          <p class="mt-2 mb-4">
+            ระบบกระดานเว็บบอร์ด สำหรับการสนทนาผ่านเว็บบอร์ด
+            <br />และคลังเอกสารสำหรับประชาสัมพันธ์ และให้ประชาชนดาวนโหลด
+          </p>
+          <hr width="95%" class="mt-4 mb-8" />
+          <h2>ประกาศประกวดราคา ข่าวประชาสัมพันธ์</h2>
+          <p class="mt-3">
+            ระบบเพิ่มเนื้อหาเว็บ เพื่อให้ประชาชนเข้าถึงข้อมูล ข่าวสารของหน่วยงาน
+            เช่น<br />
+            การประกวดราคา การประชาสัมพันธ์
+          </p>
+          <hr width="95%" class="mt-4 mb-8" />
+          <h2>ระบบร้องทุกข์และสำรวจความคิดเห็น</h2>
+          <p class="mt-3">
+            ระบบรับข้อมูลต่างๆ จากประชาชนผู้เข้าชมเว็บไซต์ เช่น การร้องทุกข์<br />
+            ระบบสำรวจความคิดเห็น
+          </p>
+          <hr width="95%" class="mt-4 mb-8" />
+        </div>
+      </v-col>
+    </v-row>
+  </v-row>
+</template>
+
+<script>
+export default {
+  name: "feaure",
+};
+</script>
