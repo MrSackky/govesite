@@ -39,7 +39,6 @@
                     <v-text-field
                       outlined
                       type="text"
-                      v-model="unknown"
                       id="govename"
                       name="govename"
                       placeholder="ชื่อหน่วยงาน"
@@ -51,7 +50,6 @@
                     <v-text-field
                       outlined
                       type="text"
-                      v-model="unknown"
                       id="usernames"
                       name="usernames"
                       placeholder="ชื่อผู้ติดต่อ"
@@ -62,7 +60,6 @@
                     <v-text-field
                       outlined
                       type="text"
-                      v-model="unknown"
                       id="phone"
                       name="phone"
                       placeholder="เบอร์โทร"
@@ -76,7 +73,6 @@
                     <v-text-field
                       outlined
                       type="text"
-                      v-model="unknown"
                       id="goveurl"
                       name="goveurl"
                       placeholder="ชื่อ url"
@@ -89,7 +85,6 @@
                     <v-text-field
                       outlined
                       type="text"
-                      v-model="unknown"
                       id="email"
                       name="email"
                       placeholder="อีเมล"
@@ -101,7 +96,6 @@
                     <v-text-field
                       outlined
                       type="password"
-                      v-model="unknown"
                       id="password"
                       name="password"
                       placeholder="รหัสผ่าน"
@@ -113,7 +107,6 @@
                     <v-text-field
                       outlined
                       type="password"
-                      v-model="unknown"
                       id="confirmPassword"
                       name="confirmPassword"
                       placeholder="ยืนยันรหัสผ่าน"

@@ -1,6 +1,7 @@
 <template>
   <v-app-bar app fixed>
     <v-row>
+      
       <v-col>
         <div class="logo-btn">
           <a class="navbar-brand" href="#">
@@ -13,9 +14,10 @@
           /></a>
         </div>
       </v-col>
-      <v-col class="mt-8">
+      <v-card-title class="mx-auto">
+      <v-col class="">
         <div class="btn">
-          <a class="text-decoration-none black--text mr-2 ml-2" href="#spot"
+          <a class="text-decoration-none black--text mr-2 ml-2zz" href="#spot"
             >คุณสมบัติ</a
           >
           <a class="text-decoration-none black--text mr-2 ml-2" href="#pricing"
@@ -26,6 +28,7 @@
           >
         </div>
       </v-col>
+      </v-card-title>
       <v-col class="mt-6">
         <div class="text-right">
           <a href="/login" class="text-decoration-none black--text mr-1">
@@ -34,6 +37,7 @@
           <v-btn to="/register" class="success mx-2"> สมัครใช้งาน </v-btn>
         </div>
       </v-col>
+      
     </v-row>
   </v-app-bar>
 </template>

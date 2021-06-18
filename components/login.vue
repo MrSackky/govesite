@@ -32,7 +32,6 @@
 
         <v-text-field
           outlined
-          v-model="unknown"
           type="email"
           class="form-control"
           placeholder="Username"
@@ -40,7 +39,6 @@
 
         <v-text-field
           outlined
-          v-model="unknown"
           type="password"
           class="form-control"
           placeholder="Password"
