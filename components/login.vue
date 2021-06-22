@@ -1,5 +1,9 @@
 <template>
   <v-card class="mx-auto mt-4 mb-16" style="width: 500px; height: 640px">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
     <div class="content mt-4 mr-4 ml-4 mb-4">
       <div class="menu-list">
         <v-row
@@ -7,14 +11,15 @@
             <a
               href="/"
               class="text-decoration-none black--text mr-2 ml-2 grey--text"
-              ><span class="bi-arrow-left mx-1"> กลับหน้าหลัก </span>
+              ><v-icon color="grey"> mdi-arrow-left </v-icon
+              ><span> กลับหน้าหลัก </span>
             </a></v-col
           ><v-col class="text-right mt-6 mb-16">
             <p class="grey--text">
               ยังไม่บัญชีผู้ใช้ ?
               <a
                 href="/register"
-                class="text-decoration-none black--text mr-2 ml-2"
+                class="text-decoration-none green--text mr-2 ml-2"
               >
                 <b>สมัครสมาชิก</b>
               </a>

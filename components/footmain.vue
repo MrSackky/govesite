@@ -34,7 +34,7 @@
           </p>
         </v-col>
         <v-col md="auto" class="text-right">
-        <div class="mt-8">
+        <div class="mt-6">
           <v-btn class="mb-2" color="#4CAF50" width="120"
             ><a href="/register"
               class="
@@ -62,7 +62,7 @@
         </v-col>
       </v-row>
 
-      <hr width="185%" class="mt-3 mb-6" />
+      <hr width="100%" class="mt-3 mb-6" />
 
       <v-row>
         <v-col>

@@ -35,7 +35,7 @@
         </v-col>
       </v-row>
 
-      <hr width="185%" class="mt-3 mb-6" />
+      <hr width="100%" class="mt-3 mb-6" />
 
       <v-row>
         <v-col>

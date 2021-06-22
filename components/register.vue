@@ -8,14 +8,15 @@
             <a
               href="/"
               class="text-decoration-none black--text mr-2 ml-2 grey--text"
-              ><span class="bi-arrow-left mx-1"> กลับหน้าหลัก </span>
+              ><v-icon color="grey"> mdi-arrow-left </v-icon
+              ><span> กลับหน้าหลัก </span>
             </a></v-col
           ><v-col class="text-right mt-6 mb-16">
             <p class="grey--text">
-              ยังไม่บัญชีผู้ใช้ ?
+              มีบัญชีผู้ใช้แล้ว ?
               <a
                 href="/register"
-                class="text-decoration-none black--text mr-2 ml-2"
+                class="text-decoration-none green--text mr-2 ml-2"
               >
                 <b>เข้าสู่ระบบ</b>
               </a>

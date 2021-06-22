@@ -1,45 +1,9 @@
 <template>
-  <v-app>
-    <v-main>
-      <v-container fluid>
-        <!-- <navbars /> -->
-        <slide />
-        <spot/>
-        <feaure />
-        <pricing/>
-        <login/>
-        <register/>
-        <contact />
-      </v-container>
-    </v-main>
-    <footmain/>
-    <foot/>
-  </v-app>
-</template>
+  <div class=""><nuxt /></div
+></template>
 
 <script>
-import slide from "@/components/slide.vue";
-// import navbars from '~/components/navbars.vue';
-import footmain from '~/components/footmain.vue';
-import foot from '~/components/foot.vue';
-import contact from '~/components/contact.vue';
-import spot from '~/components/spot.vue';
-import feaure from '~/components/feaure.vue';
-import pricing from '~/components/pricing.vue';
-import login from '~/components/login.vue';
-import register from '~/components/register.vue';
-export default {
-  components: {
-    slide,
-    // navbars,
-    foot,
-    footmain,
-    contact,
-    spot,
-    feaure,
-    pricing,
-    login,
-    register
-  }
-}
+export default {};
 </script>
+
+<style></style>

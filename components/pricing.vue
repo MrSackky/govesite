@@ -1,7 +1,7 @@
 <template>
-    <div class="pricing mt-16 mb-16" id="pricing">
+    <div class="pricing mb-16 pa-16" id="pricing">
       <div class="header text-center">
-        <h1>ตารางเปรียบเทียบแพ็กเกจ</h1>
+        <h1 class="mt-8">ตารางเปรียบเทียบแพ็กเกจ</h1>
       </div>
       <div class="text-center">
         <v-row class="text-center mt-2 mb-16">

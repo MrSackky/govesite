@@ -1,6 +1,7 @@
 <template>
-  <div class="slide mb-3" id="slide">
-    <navbars />
+  <div class="slide mb-3 mt-16" id="slide">
+    <!-- <navbars /> -->
+    <navt/>
     <v-row class="col-right grey lighten-4 text-no-wrap">
       <v-col class="grey lighten-2 text-no-wrap rounded-r-xl">
         <div class="text-right mt-16 mb-16 mr-8">
@@ -19,7 +20,7 @@
             class="picleft"
             width="400px"
             height="320px"
-            src="https://s3-alpha-sig.figma.com/img/7c09/860c/b2e58571d299b656d2dd3e81a8baaf4e?Expires=1623628800&Signature=BYoPt-Y11sss1Vk1INGZYDb6w35yb3EztKOXTBHs8-VuBEOpFypLJNd~miF7o2kRn6a9oucqonJ0UKKSb1kkTfPWorbHODUbnH~1CUOvtuXhLTt37nVRjaFM4rUpYS-fDnJyZiGKE5WEazIBDQvhyIGQvpTlAtjYy~SoLcGw3tXSqiZ2MDDDpPrAMFlatRVJB9U2LazZcVVNP-UfJVWB4dD954RZG6QPClI3N2kbepr~WK3C1wkvLRvgcXsO1oMGAmhCjXf9XY0s~wEBL40R07oWFb~sHlRQCX46r9DTK1FDCDQ26HfRoT5F-Rh4C6XgY5VN1CiSG-u288wJ7FZEGA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+            src="../assets/src/slidehome.png"
           />
         </v-layout>
       </v-col>
@@ -28,12 +29,14 @@
 </template>
 
 <script>
-import navbars from "~/components/navbars.vue";
+// import navbars from "~/components/navbars.vue";
+import navt from "~/components/navt.vue";
 
 export default {
   name: "slide",
   components: {
-    navbars,
+    // navbars,
+    navt
   },
 };
 </script>
